@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20sp"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="211dp"
+        android:layout_height="162dp"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/judul"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/kemkominfo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginTop="5sp"
+        android:autofillHints="@string/username"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890"
+        android:hint="masukkan username anda"
+        android:inputType="textFilter"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/password"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginTop="5sp"
+        android:inputType="textPassword"
+        android:hint="masukkan password anda"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/action_login"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginTop="20sp"
+        android:background="@color/colorPrimary"
+        android:text="@string/login"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/action_register"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginTop="20sp"
+        android:background="@color/colorPrimary"
+        android:text="@string/register"
+        android:textColor="#FFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
